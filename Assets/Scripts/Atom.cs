@@ -35,7 +35,7 @@ public class Atom : MonoBehaviour
         neutronsParticles.Emit((int)count);
         ParticleSystem.ShapeModule shape = neutronsParticles.shape;
         shape.radius = count / 30;
-        positiveForceField.endRange = count / 30 + 0.5f;
+        positiveForceField.endRange = count / 30 + 0.6f;
     }
 
     public void SetNeutronCount(float count)
@@ -44,6 +44,6 @@ public class Atom : MonoBehaviour
         protonsParticles.Emit((int)count);
         ParticleSystem.ShapeModule shape = protonsParticles.shape;
         shape.radius = count / 30;
-        positiveForceField.endRange = count / 30 + 0.5f;
+        positiveForceField.endRange = count / 30 + 0.6f;
     }
 }
